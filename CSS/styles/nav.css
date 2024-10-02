@@ -1,0 +1,28 @@
+nav{
+    padding: 10px 20px;
+    /*
+        los valores se leen en el sentido de las agujas del reloj
+        incidando desde las 12 -> 10px 20px 10px 20px
+        tambien se puede hacer asi: 
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    */
+    /*
+        el "display" mameja como se muestran los elementos o si se
+        muestran
+    */
+    display: flex;
+    /*Maneja el eje principal del elemento*/
+    justify-content: center;
+    /*Maneja el eje secundario del elemento*/
+    align-items: center;
+}
+
+nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
