@@ -1,3 +1,9 @@
+:root{
+    --color-principal: aqua ;
+    --color-secundario: white;
+    --font-personalizado: 30px;
+}
+
 nav{
     padding: 10px 20px;
     /*
@@ -15,9 +21,11 @@ nav{
     */
     display: flex;
     /*Maneja el eje principal del elemento*/
-    justify-content: center;
+    justify-content: space-between;
     /*Maneja el eje secundario del elemento*/
     align-items: center;
+    /*degradado*/
+    background: linear-gradient(90deg, var(--color-principal),blue);
 }
 
 nav > div {
@@ -25,4 +33,49 @@ nav > div {
     justify-content: center;
     align-items: center;
     gap: 12px;
+    font-size: var(--font-personalizado);
+}
+/*
+    Que son las clases?
+    Las clases se utilizan para darle estilos a un grupo de elementos
+*/
+
+.hover:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav > div > p:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#contacto{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    /*
+        NOTA: Los colores tambien se pueden poner en hexadecimal
+        rgb, rgba, hsl, hsla
+    */
+    border: 3px solid blue;
+    border-radius: 15px;
+    font-size: var(--font-personalizado);
+}
+
+/*Lista de PSEUDO CLASES
+    :active (cuando se le da click)
+    :focus (cuando se selecciona)
+    :hover (cuando el mouse pasa por encima)
+    :visited (cuando ya es visitado)
+    :link (cuando no se ha visitado)
+    :first-child (primer hijo)
+    :last-child (ultimo hijo)
+*/
+
+/*Que son las PSEUDO CLASES*/
+#contacto:hover{
+    background-color: var(--color-principal);
+    color:var(--color-secundario);
+    /*transition: propiedad tiempo efecto;*/
+    transition: background-color 0.5s, color 0.5s;
 }
