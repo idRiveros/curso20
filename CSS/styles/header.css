@@ -1,0 +1,57 @@
+header{
+    /*
+        Grid sirve para crear un sistema de columnas o filas
+    */
+    display: grid;
+    /*
+        Sirve para indicar cuantas columnas quiero y su tamaño
+    */
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: linear-gradient(90deg, aqua, blue);
+}
+
+header>div>img{
+    width: 80%;
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*
+    Alinear texto
+    text-align: center;
+    */
+    gap: 12px;
+}
+
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton{
+    background-color: white;
+    color: aqua;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+}
+
+#boton:hover{
+    background-color: aqua;
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.izquierda>h1{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.izquierda>h2{
+    font-size: 20px;
+    font-weight: 300;
+}

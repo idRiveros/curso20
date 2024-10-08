@@ -45,11 +45,6 @@ nav > div {
     cursor: pointer;
 }
 
-nav > div > p:hover{
-    font-weight: 600;
-    cursor: pointer;
-}
-
 #contacto{
     background-color: var(--color-secundario);
     color: var(--color-principal);
@@ -58,8 +53,9 @@ nav > div > p:hover{
         rgb, rgba, hsl, hsla
     */
     border: 3px solid blue;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: var(--font-personalizado);
+    padding: 5px;
 }
 
 /*Lista de PSEUDO CLASES
